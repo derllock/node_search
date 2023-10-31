@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <table>
+        <tr>
+            <th>Technical Skill</th>
+            <th>Location</th>
+            <th>Experience</th>
+        </tr>
+        <% results.forEach(result => { %>
+            <tr>
+                <td><%= result.technical_skill %></td>
+                <td><%= result.location %></td>
+                <td><%= result.experience %></td>
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
